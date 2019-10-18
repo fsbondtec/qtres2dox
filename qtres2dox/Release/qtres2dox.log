@@ -1,0 +1,38 @@
+﻿  DoxGenerator.cpp
+  doxygenexport.cpp
+  main.cpp
+  MyUiForm.cpp
+  qtres2dox.cpp
+  qrc_qtres2dox.cpp
+  moc_qtres2dox.cpp
+  moc_MyUiForm.cpp
+  moc_DoxygenExport.cpp
+  qtres2dox.vcxproj -> D:\VisualStudio_Projects\qtres2dox\Win32\Release\qtres2dox.exe
+  D:\VisualStudio_Projects\qtres2dox\Win32\Release\qtres2dox.exe
+  1 File(s) copied
+  D:\VisualStudio_Projects\qtres2dox\bin\qtres2dox.exe 32 bit, release executable
+  Adding Qt5Svg for qsvgicon.dll
+  Skipping plugin qtvirtualkeyboardplugin.dll due to disabled dependencies (Qt5Qml Qt5Quick).
+  Direct dependencies: Qt5Core Qt5Gui Qt5Widgets Qt5Xml
+  All dependencies   : Qt5Core Qt5Gui Qt5Widgets Qt5Xml
+  To be deployed     : Qt5Core Qt5Gui Qt5Svg Qt5Widgets Qt5Xml
+  Qt5Core.dll is up to date.
+  Qt5Gui.dll is up to date.
+  Qt5Svg.dll is up to date.
+  Qt5Widgets.dll is up to date.
+  Qt5Xml.dll is up to date.
+  libGLESV2.dll is up to date.
+  libEGL.dll is up to date.
+  D3Dcompiler_47.dll is up to date.
+  Patching Qt5Core.dll...
+  qsvgicon.dll is up to date.
+  qgif.dll is up to date.
+  qicns.dll is up to date.
+  qico.dll is up to date.
+  qjpeg.dll is up to date.
+  qsvg.dll is up to date.
+  qtga.dll is up to date.
+  qtiff.dll is up to date.
+  qwbmp.dll is up to date.
+  qwebp.dll is up to date.
+  qwindows.dll is up to date.
