@@ -63,9 +63,10 @@ void DoxGenerator::writeQrcPage(const MyResourceCollection& resourceCollection, 
 	stream << endl;
 
 	int iSection = 1;
+	int iSubSection = 1;
 	foreach(node, nodes) {
-		stream << "  <hr />" << endl;
-		stream << "  <hr />" << endl;
+		stream << "  <hr>" << endl;
+		stream << "  <hr>" << endl;
 		stream << "  \\section SecFileName"
 			   << iSection << " "
 			   << QFileInfo(resourceCollection.qrcFileName(iSection-1)).fileName() 
@@ -74,7 +75,6 @@ void DoxGenerator::writeQrcPage(const MyResourceCollection& resourceCollection, 
 		stream << " is the prefix of the Resource Url and contains following files" << endl;
 		stream << endl << endl;
 
-		int iSubSection = 1;
 		foreach(QString str, node.files) {
 			QFileInfo fileInfo(str);
 			QString ext = fileInfo.suffix().toLower();
@@ -82,9 +82,9 @@ void DoxGenerator::writeQrcPage(const MyResourceCollection& resourceCollection, 
 			QString filedest = node.prefix + str;
 			filedest.replace('/', '_');
 
-			if (ext == "png" || ext == "jpeg" || ext == "bmp") {
+			if (ext == "png" || ext == "jpeg" || ext == "bmp" || ext == "svg") {
 				// koennte sich um ein image handeln 
-				stream << "  <hr />" << endl;
+				stream << "  <hr>" << endl;
 				stream << "  \\subsection ImageSec" << iSubSection << " " << str << endl;
 				stream << "  \\image html " << filedest.toLower() << endl;
 				stream << endl;
@@ -129,8 +129,12 @@ void DoxGenerator::writeui(MyUiForm* f)
 		implName = implName.left(implName.length() - 5);
 	}
 
-	stream << "  <hr />" << endl;
-	stream << "  \\section " << f->name() << "_tag " << f->name() << endl;
+	QString section = implName;
+	section.replace("::", "_");
+	section += "_tag";
+
+	stream << "  <hr>" << endl;
+	stream << "  \\section " << section << " " << f->name() << endl;
 	stream << "  <b>Implementation Class:</b> " << implName << "\\n" << endl;
 	stream << "  Path: " << f->filePath() << "\\n" << endl;
 	stream << "  \\image html " << f->name() << ".png" << endl;

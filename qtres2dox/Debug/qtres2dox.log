@@ -1,14 +1,9 @@
-﻿  Moc'ing qtres2dox.h...
-  Moc'ing MyUiForm.h...
-  Moc'ing DoxygenExport.h...
+﻿  Moc'ing MyUiForm.h...
   DoxGenerator.cpp
-  doxygenexport.cpp
-  main.cpp
   MyUiForm.cpp
+  main.cpp
   qtres2dox.cpp
-  qrc_qtres2dox.cpp
-  moc_qtres2dox.cpp
   moc_MyUiForm.cpp
-  moc_DoxygenExport.cpp
+  moc_qtres2dox.cpp
   qtres2dox.vcxproj -> D:\VisualStudio_Projects\qtres2dox\Win32\Debug\qtres2dox.exe
   qtres2dox.vcxproj -> D:\VisualStudio_Projects\qtres2dox\Win32\Debug\qtres2dox.pdb (Full PDB)

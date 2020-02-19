@@ -104,7 +104,7 @@ public:
 				QFileInfo fileInfo(filename);
 				QString ext = fileInfo.suffix().toLower();
 
-				if (ext == "png" || ext == "jpeg" || ext == "bmp") {
+				if (ext == "png" || ext == "jpeg" || ext == "bmp" || ext == "svg") {
 					QString destfile = node.prefix + filename;
 					destfile.replace('/', '_');
 					destfile = path + destfile.toLower();
