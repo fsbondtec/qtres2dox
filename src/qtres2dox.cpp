@@ -38,6 +38,7 @@
 #include <QDebug>
 #include <QTextStream>
 #include <QMdiArea>
+#include <QStyle>
 
 #include "MyResourceCollection.h"
 #include "DoxGenerator.h"

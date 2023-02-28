@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/qtres2dox">
+        <file>planarsurface_32.png</file>
+    </qresource>
+</RCC>
